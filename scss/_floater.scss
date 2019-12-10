@@ -1,0 +1,98 @@
+// COLORS
+$blue-primary: #041A59;
+$blue-secondary: #031240;
+$blue-tertiary: #020B26;
+$dark-grey: rgb(41, 41, 41);
+$grey-light: #D9D9D9;
+$white-alpha: rgba(255, 255, 255, 0.71);
+
+.floater-menu {
+    background-color: $blue-primary;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 0 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 7px 7px 10px;
+    z-index: 3;
+    transition-duration: .8s;
+    border-bottom: white 1px solid;
+    border-right: white 1px solid;
+    cursor: pointer;
+    &:hover {
+        #line-menu-1 {
+            width: 25px;
+            transition: all ease-out .8s;
+        }
+        #line-menu-2 {
+            width: 20px;
+            transition: all ease-out .8s;
+        }
+        #line-menu-3 {
+            width: 15px;
+            transition: all ease-out .8s;
+        }
+    }
+    .line-menu {
+        transition: all ease-out .8s;
+        position: relative;
+        width: 20px;
+        background-color: white;
+        height: 2px;
+        margin-top: 6px;
+        box-shadow: -2px 2px 6px 1px black;
+    }
+}
+.close-menu {
+    transition-duration: .8s;
+    font-size: 32px;
+    color: white;
+    text-shadow: -3px 4px 4px black;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+    cursor: pointer;
+    opacity: 0;
+}
+.show-close-btn {
+    opacity: 1;
+    transition-duration: .8s;
+    transform: rotate(360deg)
+}
+.hider-rotate {
+    transform: rotate(180deg);
+    opacity: 0;
+    transition-duration: .8s;
+}
+.expanded-menu {
+    width: 100vw;
+    height: 100vh;
+    transition-duration: .8s;
+    border-radius: 0;
+    background-color: $dark-grey;
+    cursor:default;
+}
+#content-text {
+    width: 50%;
+    margin: 10em auto;
+    ul li p {
+        color: white;
+        font-size: 28px;
+    }
+    .menu-item {
+        height: 50px;
+        width: 100%;
+        overflow: hidden;
+        a p {
+            font-weight: 700;
+            transform: translateY(-160%);
+            transition-duration: .5s;
+            font-family: "Cinzel";
+            font-style: italic;
+            &:hover {
+                color: rgb(214, 137, 137);
+            }
+        }
+    }
+}
