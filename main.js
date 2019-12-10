@@ -20,7 +20,7 @@ window.onload = function() {
             wrapper.setAttribute('style', 'display:none')
             setTimeout(function() {
                 try{
-                    for(var i = 0; i <= item.length; i++) {
+                    for(var i = 0; i < item.length; i++) {
                         item[i].setAttribute('style', 'transform: translateY(-45%); transition-duration: .5s;')
                     }
                 } catch(e) {
@@ -30,7 +30,7 @@ window.onload = function() {
         }
         close.onclick = function() {
             try{
-                for(var i = 0; i <= item.length; i++) {
+                for(var i = 0; i < item.length; i++) {
                     item[i].removeAttribute('style')
                 }
             } catch(e) {
